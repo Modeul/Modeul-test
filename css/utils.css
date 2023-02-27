@@ -58,6 +58,7 @@
 }
 
 .m-t-2{
+<<<<<<< HEAD
     margin-top: 20px;
 } 
 
@@ -67,6 +68,14 @@
 .m-t-4{ 
     margin-top: 40px;
 } 
+=======
+    margin-top: 14px;
+} 
+
+.m-t-3{
+    margin-top: 20px;
+}
+>>>>>>> c9d71a1 (git init)
 
 
 .m-t-p1{
