@@ -77,6 +77,16 @@
 }
 >>>>>>> c9d71a1 (git init)
 
+.m-t-4{
+    margin-top: 60px;
+} 
+/* 2/25 추가 */
+.m-t-5{ 
+    margin-top: 50px;
+} 
+.m-t-6{
+    margin-top: 35px;
+}
 
 .m-t-p1{
     margin-top: 1%;

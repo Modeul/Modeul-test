@@ -1,43 +1,42 @@
 @charset "UTF-8"; 
 
-/* ---- 게시글 목록 부분 ---------------------- */
-.li-gr{
-    grid-template-columns: repeat(6, minmax(51px, auto));
-    grid-template-rows: repeat(3, minmax(36px, auto));
-    grid-row-gap: 1%;
-    grid-column-gap: 1%;
-    grid-template-areas: 
-    "pic ct ct ct . ht"
-    "pic subj subj subj subj ht"
-    "pic mem dt dt dt ht"
+.logo{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+    color: #253232;
+  }
+
+.title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #222222;  
+  }
+.title-2{
+  font-weight: Bold;
+  font-size: 30px;
+  text-align: center;
+  /* display: inline-block; */
+  margin: 0 0 40px 0;
+  color: rgba(0, 0, 0, 1);
 }
 
-    .li-categ{
-        grid-area: ct;
-    }
-
-    .li-pic{
-        grid-area: pic;
-    }
-
-    .li-subj{
-        grid-area: subj;
-    }   
-
-    .li-member{
-        grid-area: mem;
-    }
-
-    .li-date{
-        grid-area: dt;
-    }
-
-    .li-heart{
-        grid-area: ht;
-    }
-
-/* ---- nav 부분 ---------------------- */
-
-.pos-t-3{
-    top: 490px;
+/* input-box */
+.input-field-1{
+    width: 236px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #253232;
+    border-radius: 10px;
+}
+.input-field-2{
+    width: 300px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #253232;
+    border-radius: 10px;
 }
