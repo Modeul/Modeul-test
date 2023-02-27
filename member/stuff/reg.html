@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- 경로 매우 주의!!-->
+    <link href="../../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../../css/utils.css" type="text/css" rel="stylesheet">
+    <link href="../../css/style.css" type="text/css" rel="stylesheet">
+    <link href="../../css/button.css" type="text/css" rel="stylesheet">
+    <link href="../../css/component/component-reg.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- =================== reg1 ======================= -->
+    <section class="reg1-form">
+        <h1 class="d-none">reg1</h1>
+
+        <section class="canvas-1 d-fl fl-dir-col">
+            <!-- =================== reg1 : header ===================== -->
+            <header class="d-fl">
+                
+                <div>
+                    <a href="./list.html" class="icon icon-back">뒤로가기</a>
+                </div>
+                
+                <div class="hd-title-box">
+                    <h1 class="hd-title">카테고리 설정</h1>
+                </div>
+            </header>
+    
+            <!-- =================== reg1 : main ===================== -->
+            <main>
+                <div class="reg1-main-content">
+                    <h1>지역 주민들과 어떤 물건을 같이 살까요?</h1>
+                </div>
+    
+                <div class="category-select">
+                    <ul class="select-box-list">
+                        <li><button class="select-box categ-eff">일반상품</button></li>
+                        <li><button class="select-box categ-eff">대형마트 대량 물품</button></li>
+                        <li><button class="select-box categ-eff">딜리버리 푸드</button></li>
+                    </ul>
+                    <button class="btn-next m-t-button">다음</button>
+                </div>
+            </main>
+    
+        </section>
+  </section>
+
+    <!-- =================== reg2 ======================= -->
+    <section class="reg2-form d-none">
+        <h1 class="d-none">reg2</h1>
+
+        <section class="canvas-1 d-fl fl-dir-col">
+
+            <h1 class="d-none">reg2</h1>
+            <!-- header에 id를 부여해줄 것 - id는 html 짠사람이 부여해주기 때문이다! 이거로 css 경로 부여! -->
+        
+            <!-- =================== reg2 : header ===================== -->
+            <header class="">
+                
+                <div class="reg2-back">
+                    <a class="icon icon-back">뒤로가기</a>
+                </div>
+                
+                <div class="hd-title-box">
+                    <h1 class="hd-title">글 등록하기</h1>
+                </div>
+            </header>
+    
+            <!-- =================== reg2 : main ===================== -->
+            <main class="d-fl-jf m-b">
+                
+                <!-- form method post로 수정하기! -->
+                <form action="./list.html" method="get" enctype="multipart/form-data">
+        
+                    <div>
+                        <input type="submit" class="reg2-post" value="올리기">
+                    </div>
+                    
+                    <div class="file-box">
+                        <!-- 파일업로드 버튼 만드는 법 -->
+                        <label for="file">
+                            <div class="btn-file">파일업로드</div>
+                            <div class="btn-uploaded-files">파일업로드된 파일들1</div>
+                            <div class="btn-uploaded-files">파일업로드된 파일들2</div>
+                        </label>
+    
+                        <input type="file" class="d-none" id="file" name="file" multiple>
+                    </div>
+    
+                    <!-- 가로 스크롤 수정하기 -->
+                    <div class="select-box file-box">
+                        <label for="title" class="input-field-txt">제목</label>
+                        <input type="text" class="input-field" id="title" name="title">
+                    </div>
+                    
+                    <!-- 기존 카테고리 -->
+                    <select class="category-box" name="categ-box">
+                        <option class="" value="merchandise">일반상품</option>
+                        <option class="" value="supermarket">대형마트 대량 물품</option>
+                        <option class="" value="delivery-food">딜리버리 푸드</option>
+                    </select>
+
+                    <div class="select-box">
+                        <label for="people-count" class="input-field-txt">인원수</label>
+                        <input type="text" class="input-field" id="people-count">
+                    </div>
+                    
+
+                    <!-- 모달 추가 -->
+                    <!-- 주의 : 1페이지에서 form 태그는 1개만 동작한다! -->
+                    
+                    <div id="btn-date" class="select-box">
+                        <label for="date" class="input-field-txt">날짜</label>
+
+                        <input type="datetime-local" id="date" class="input-field" name="date-start"
+                        value="2023-02-26"
+                        min="2020-01-01" max="2025-12-31">
+                    </div>
+                           
+                    <div class="select-box">
+                        <label for="place" class="input-field-txt">약속장소</label>
+                        <input type="text" class="input-field" id="place">
+                    </div>
+    
+                    <div class="select-box">
+                        <label for="url" class="input-field-txt">링크</label>
+                        <input type="text" class="input-field" id="url">
+                    </div>
+    
+                    <div class="select-box select-content">
+                        <label for="content" class="input-field-txt">내용</label>
+                        <input type="text" class="input-field input-content" id="content">
+                    </div>
+                </form>
+            </main>
+
+        </section>
+    </section >
+</body>
+
+
+<!-- =============== JS 코드 ================= -->
+<script>
+    const reg2 = document.querySelector('.reg2-form');
+    const reg1 = document.querySelector('.reg1-form');
+    const btnReg = document.querySelector('.btn-next');
+    const backArrow = document.querySelector('.reg2-back');
+
+    // const showDate = document.querySelector('#btn-date');
+    // const dateDialog = document.querySelector('#date-dialog');
+    // const closeDate= document.querySelector('#btn-close');
+    // const confirmDate = document.querySelector('#btn-confirm');
+
+    btnReg.addEventListener('click', () => {
+        // console.log("다음 출력");
+        reg1.classList.toggle('d-none');
+        reg2.classList.toggle('d-none');
+    });
+
+    backArrow.addEventListener('click', () => {
+        // console.log("뒤로가기 출력");
+        reg2.classList.toggle('d-none');
+        reg1.classList.toggle('d-none');
+    });
+
+    // 모달 동작
+    // showDate.addEventListener('click', () => {
+    //     dateDialog.showModal();
+    // });
+
+    // closeDate.addEventListener('click', () => {
+    //     dateDialog.close();
+    // });
+
+</script>
+</html>
