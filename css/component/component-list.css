@@ -1,21 +1,11 @@
 @charset "UTF-8";
 
 .canvas {
-<<<<<<< HEAD
-
     background: white;
-
-=======
-    background: white;
->>>>>>> c9d71a1 (git init)
 }
 
 .header-jc {
     justify-content: space-between;
-<<<<<<< HEAD
-
-=======
->>>>>>> c9d71a1 (git init)
 }
 
 .li-header-categ{
@@ -25,11 +15,7 @@
 
 
 .li-gr {
-<<<<<<< HEAD
-    /* grid-template-columns: repeat(6, minmax(60px, auto)); */
-=======
     grid-template-columns: repeat(6, minmax(60px, auto));
->>>>>>> c9d71a1 (git init)
     grid-template-rows: repeat(3, minmax(24px, auto));
     grid-row-gap: 1%;
     grid-column-gap: 2%;
@@ -87,9 +73,5 @@
     grid-area: ht;
     width: 14px;
     height: 14px;
-<<<<<<< HEAD
-    background-size:auto;
-=======
->>>>>>> c9d71a1 (git init)
 }
 

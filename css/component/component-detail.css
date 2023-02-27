@@ -96,10 +96,8 @@
 
 .detail-part{
     display: grid;
-    grid-template-columns: repeat(3, au
-    );
-    grid-template-rows: repeat(2, au
-    );
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
 
     position: fixed;
     bottom: 0;

@@ -68,17 +68,10 @@
     font-weight: bold;
 
     /* PointColor --------------- */
-<<<<<<< HEAD
-    /* background-color: rgb(0, 152, 116); */   /*초록*/
-    background-color: #FFCA4B;            /*감자*/
-    /* background-color: rgb(136, 176, 75); */  /*연두*/
-    /* background-color: #9b1b30; */            /*빨강*/
-=======
     /* background-color: rgb(0, 152, 116); */
     background-color: #FFCA4B;
     /* background-color: rgb(136, 176, 75); */
     /* background-color: #9b1b30; */
->>>>>>> c9d71a1 (git init)
 }
 /* ======================================== */
 
