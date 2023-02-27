@@ -1,0 +1,43 @@
+@charset "UTF-8"; 
+
+/* ---- 게시글 목록 부분 ---------------------- */
+.li-gr{
+    grid-template-columns: repeat(6, minmax(51px, auto));
+    grid-template-rows: repeat(3, minmax(36px, auto));
+    grid-row-gap: 1%;
+    grid-column-gap: 1%;
+    grid-template-areas: 
+    "pic ct ct ct . ht"
+    "pic subj subj subj subj ht"
+    "pic mem dt dt dt ht"
+}
+
+    .li-categ{
+        grid-area: ct;
+    }
+
+    .li-pic{
+        grid-area: pic;
+    }
+
+    .li-subj{
+        grid-area: subj;
+    }   
+
+    .li-member{
+        grid-area: mem;
+    }
+
+    .li-date{
+        grid-area: dt;
+    }
+
+    .li-heart{
+        grid-area: ht;
+    }
+
+/* ---- nav 부분 ---------------------- */
+
+.pos-t-3{
+    top: 490px;
+}

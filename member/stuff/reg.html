@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- 경로 매우 주의!!-->
+    <link href="../../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../../css/utils.css" type="text/css" rel="stylesheet">
+    <link href="../../css/style.css" type="text/css" rel="stylesheet">
+    <link href="../../css/button.css" type="text/css" rel="stylesheet">
+    <link href="../../css/component/component-reg.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =================== reg1 ======================= -->
+    <section class="canvas-1">
+
+        <!-- 다이얼로그 --> 
+        <button onclick="document.getElementById('myDialog').showModal()">다이얼로그 열기</button>
+
+        <dialog id="myDialog">
+        <h1>다이얼로그 타이틀</h1>
+        <p>다이얼로그 내용</p>
+        <button onclick="document.getElementById('myDialog').close()">닫기</button>
+        </dialog>
+        <h1 class="d-none">reg1</h1>
+
+        <!-- =================== reg1 : header ===================== -->
+        <header>
+            
+            <div>
+                <!-- 이전 페이지로 이동할 것, list나 detail 페이지로 이동 -->
+                <a href="./list.html" class="icon icon-back">뒤로가기</a>
+            </div>
+            
+            <div>
+                <h1>카테고리 설정</h1>
+            </div>
+
+        </header>
+
+        <!-- =================== reg1 : main ===================== -->
+        <main>
+            <div class="">
+                <h2>지역 주민들과 어떤 물건을 같이 살까요?</h2>
+            </div>
+
+            <div class="">
+                <ul class="">
+                    <li><button class="select-box">일반상품</button></li>
+                    <li><button class="select-box">대형마트 대량 물품</button></li>
+                    <li><button class="select-box">딜리버리 푸드</button></li>
+                </ul>
+                <button class="">다음</button>
+            </div>
+        </main>
+
+
+        <!-- ====================== reg1 : nav ======================== -->
+        <nav>
+
+        </nav>
+    
+    </section>
+
+    <!-- =================== reg2 ======================= -->
+    <section class="d-none">
+        <h1 class="d-none">reg2</h1>
+        <!-- header에 id를 부여해줄 것 - id는 html 짠사람이 부여해주기 때문이다! 이거로 css 경로 부여! -->
+    
+        <!-- =================== reg2 : header ===================== -->
+        <header class="">
+            
+            <div>
+                <h1 class="">뒤로가기</h1>
+            </div>
+            
+            <div class="">
+                <h1>글 등록하기</h1>
+            </div>
+        </header>
+
+        <!-- =================== reg2 : main ===================== -->
+        <main class="d-none">
+            <form action="./list.html" method="post" enctype="multipart/form-data">
+    
+                <div>
+                    <input type="submit" class="" value="올리기">
+                </div>
+                
+                <div class="file-box">
+                    
+                    <!-- 파일업로드 버튼 만드는 법 -->
+                    <label for="file">
+                        <div class="">파일업로드</div>
+                        <div class="">파일업로드된 파일들1</div>
+                        <div class="d-none">파일업로드된 파일들2</div>
+                    </label>
+
+                    <input type="file" class="" id="file" name="file" multiple>
+                    
+                </div>
+
+                <!-- 가로 스크롤 수정하기 -->
+                <div class="">
+                    <div class="n">
+                        <label for="title" class="t">제목</label>
+                        <input type="text" class="" id="title" name="title">
+                    </div>
+                </div>
+                
+                <!-- 기존 카테고리 -->
+                <select class="" name="" >
+                    <option class="" value="merchandise">일반상품</option>
+                    <option class="" value="supermarket">대형마트 대량 물품</option>
+                    <option class="" value="delivery-food">딜리버리 푸드</option>
+                </select>
+
+                <!-- 새로운 카테고리 -->
+                <!-- <div class="category-select">
+                    <button class="select-category-button">카테고리 선택</button>
+                    <ul class="category-list-box">
+                        <li><button class="category-list">일반상품</button></li>
+                        <li><button class="category-list">대형마트 대량 물품</button></li>
+                        <li><button class="category-list">딜리버리 푸드</button></li>
+                    </ul>
+                </div> -->
+
+                <div class="">
+                    <div class="">
+                        <label for="people-count" class="">인원수</label>
+                        <input type="text" class="" id="people-count">
+                    </div>
+                </div>
+
+
+                <div class="">
+                    <div class="">
+                        <label for="date" class="">날짜</label>
+                        <input type="text" class="" id="date">
+                    </div>
+                </div>
+                
+                
+                <div class="">
+                    <div class="">
+                        <label for="place" class="">약속장소</label>
+                        <input type="text" class="" id="place">
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="">
+                        <label for="url" class="">링크</label>
+                        <input type="text" class="" id="url">
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="">
+                        <label for="content" class="">내용</label>
+                        <input type="text" class="" id="content">
+                    </div>
+                </div>
+            </form>
+        </main>
+
+        <!-- ====================== nav ======================== -->
+        <nav>
+
+        </nav> 
+    </section>
+</body>
+
+
+<!-- =============== JS 코드 ================= -->
+<script>
+    const reg2 = document.querySelector('.reg2-form');
+    const reg1 = document.querySelector('.reg1-form');
+    const regBtn = document.querySelector('.reg1-select-category-button');
+    const backArrow = document.querySelector('.reg2-back-arrow');
+
+
+    regBtn.addEventListener('click', () => {
+        // console.log("다음 출력");
+        reg1.classList.toggle('d-none');
+        reg2.classList.toggle('d-none');
+    });
+
+    backArrow.addEventListener('click', () => {
+        // console.log("뒤로가기 출력");
+        reg2.classList.toggle('d-none');
+        reg1.classList.toggle('d-none');
+    });
+
+</script>
+</html>
