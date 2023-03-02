@@ -1,12 +1,9 @@
 @charset "UTF-8";
 
-.canvas {
-    background: white;
-}
-
 .header-jc {
     justify-content: space-between;
 }
+
 
 .li-header-categ{
     padding-top: 0.1rem;
@@ -15,12 +12,23 @@
 
 
 .li-gr {
-    grid-template-columns: repeat(6, minmax(60px, auto));
+    /* grid-template-columns: repeat(6, minmax(60px, auto)); */
     grid-template-rows: repeat(3, minmax(24px, auto));
     grid-row-gap: 1%;
     grid-column-gap: 2%;
     grid-template-areas:
         "pic ct ct . . ht"
+        "pic subj subj subj subj ht"
+        "pic mem dt dt dt ht"
+}
+
+.li-gr-2 {
+    /* grid-template-columns: repeat(6, minmax(60px, auto)); */
+    grid-template-rows: repeat(3, minmax(24px, auto));
+    grid-row-gap: 1%;
+    grid-column-gap: 2%;
+    grid-template-areas:
+        "pic ct ct ct ct ht"
         "pic subj subj subj subj ht"
         "pic mem dt dt dt ht"
 }
@@ -32,7 +40,7 @@
 .li-pic {
     grid-area: pic;
     grid-area: pic;
-    background-image: url(../../images/member/stuff/chick.jpg);
+    background-image: url(../../../../images/member/stuff/chick.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -73,5 +81,6 @@
     grid-area: ht;
     width: 14px;
     height: 14px;
+    background-size:auto;
 }
 
