@@ -77,18 +77,3 @@
 
 
 
-/* ====== gps =========================== */
-
-.gps-button{ 
-    width: 150px;
-    height: 40px;
-    
-    border: none;
-    border-radius: 10px;
-    
-    background-color: #000;
-    color: #fff;
-
-    text-align: center;
-    cursor: pointer;
-}
