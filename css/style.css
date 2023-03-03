@@ -98,8 +98,8 @@
 
 /* === detail ====================== */
 
-.icon-person{
-    background-image: url("../../../images/member/stuff/person.png");
+.icon-member{
+    background-image: url("../images/member/stuff/member.png");
     background-repeat: no-repeat;
     background-position: center;        
     background-size: contain;
