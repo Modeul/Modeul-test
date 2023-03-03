@@ -98,8 +98,8 @@
 
 /* === detail ====================== */
 
-.icon-person{
-    background-image: url("../../../images/member/stuff/person.png");
+.icon-member{
+    background-image: url("../../../images/member/stuff/member.png");
     background-repeat: no-repeat;
     background-position: center;        
     background-size: contain;
@@ -109,12 +109,11 @@
     text-indent: -999px;
 }
 /* 일단 detail heart만! */
-.icon-heart{
+.icon-heart{    
     background-image: url("data:image/svg+xml,%3Csvg width='14' height='13' viewBox='0 0 14 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.66667 12.2333L5.7 11.3533C2.26667 8.24 0 6.18667 0 3.66667C0 1.61333 1.61333 0 3.66667 0C4.82667 0 5.94 0.54 6.66667 1.39333C7.39333 0.54 8.50667 0 9.66667 0C11.72 0 13.3333 1.61333 13.3333 3.66667C13.3333 6.18667 11.0667 8.24 7.63333 11.36L6.66667 12.2333Z' fill='%23F36283'/%3E%3C/svg%3E%0A");
-
     background-repeat: no-repeat;
     background-position: center;        
-    width: 19px;
+    width: 19px; 
     height: 19px;
     display: inline-block;
     text-indent: -9999px;
@@ -174,19 +173,36 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 96 960 960' width='24'%3E%3Cpath d='m336 748.308 144-144 144 144L652.308 720l-144-144 144-144L624 403.692l-144 144-144-144L307.692 432l144 144-144 144L336 748.308ZM480.134 936q-74.673 0-140.41-28.339-65.737-28.34-114.365-76.922-48.627-48.582-76.993-114.257Q120 650.806 120 576.134q0-74.673 28.339-140.41 28.34-65.737 76.922-114.365 48.582-48.627 114.257-76.993Q405.194 216 479.866 216q74.673 0 140.41 28.339 65.737 28.34 114.365 76.922 48.627 48.582 76.993 114.257Q840 501.194 840 575.866q0 74.673-28.339 140.41-28.34 65.737-76.922 114.365-48.582 48.627-114.257 76.993Q554.806 936 480.134 936Z'/%3E%3C/svg%3E");
 }
 
+.icon-gps {
+    background: url("data:image/svg+xml,%3Csvg width='52' height='42' viewBox='0 0 52 42' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath d='M14.4216 30.64V37.69H15.7516V30.64H14.4216ZM13.2116 32.93V33.99H14.9216V32.93H13.2116ZM13.2116 34.92V35.97H14.9216V34.92H13.2116ZM8.03156 31.6V32.64H13.1116V31.6H8.03156ZM10.6316 32.97C9.37156 32.97 8.46156 33.72 8.46156 34.79C8.46156 35.86 9.37156 36.61 10.6316 36.61C11.8916 36.61 12.8016 35.86 12.8016 34.79C12.8016 33.72 11.8916 32.97 10.6316 32.97ZM10.6316 33.99C11.1716 33.99 11.5516 34.28 11.5516 34.79C11.5516 35.31 11.1716 35.59 10.6316 35.59C10.0916 35.59 9.71156 35.31 9.71156 34.79C9.71156 34.28 10.0916 33.99 10.6316 33.99ZM9.97156 30.61V32.24H11.3016V30.61H9.97156ZM9.62156 38.67V39.73H15.9516V38.67H9.62156ZM9.62156 37.11V39.16H10.9616V37.11H9.62156ZM23.9608 30.63V39.89H25.2208V30.63H23.9608ZM22.8508 34.18V35.26H24.3908V34.18H22.8508ZM21.9708 30.77V39.47H23.2108V30.77H21.9708ZM18.8508 32.07V32.89C18.8508 34.67 18.4108 36.31 17.0208 37.11L17.8208 38.13C19.3608 37.2 19.8608 35.18 19.8608 32.89V32.07H18.8508ZM19.1208 32.07V32.89C19.1208 35.04 19.6708 36.95 21.2308 37.79L21.9908 36.78C20.6108 36.06 20.1408 34.52 20.1408 32.89V32.07H19.1208ZM17.3208 31.57V32.64H21.5308V31.57H17.3208ZM29.4 31C28 31 26.98 31.81 26.98 32.98C26.98 34.13 28 34.96 29.4 34.96C30.81 34.96 31.83 34.13 31.83 32.98C31.83 31.81 30.81 31 29.4 31ZM29.4 32.08C30.08 32.08 30.56 32.4 30.56 32.98C30.56 33.55 30.08 33.87 29.4 33.87C28.73 33.87 28.25 33.55 28.25 32.98C28.25 32.4 28.73 32.08 29.4 32.08ZM28.78 35.88V39.61H30.11V35.88H28.78ZM32.83 30.63V39.89H34.15V30.63H32.83ZM26.59 36.58C28.19 36.57 30.38 36.55 32.39 36.15L32.3 35.18C30.34 35.48 28.05 35.5 26.43 35.5L26.59 36.58ZM41.9592 30.63V39.89H43.2992V30.63H41.9592ZM37.8792 33.03V33.51C37.8792 34.91 37.1592 36.48 35.6392 37.16L36.3492 38.18C38.0592 37.44 38.9292 35.47 38.9292 33.51V33.03H37.8792ZM38.1692 33.03V33.51C38.1692 35.41 39.0492 37.32 40.7592 38.03L41.4692 37.01C39.9392 36.36 39.2092 34.84 39.2092 33.51V33.03H38.1692ZM35.9492 32.14V33.19H41.0992V32.14H35.9492ZM37.8792 30.84V32.68H39.2092V30.84H37.8792Z' fill='black' fill-opacity='0.5'/%3E%3Crect x='12' width='28.875' height='28' fill='url(%23pattern0)'/%3E%3Cdefs%3E%3Cpattern id='pattern0' patternContentUnits='objectBoundingBox' width='1' height='1'%3E%3Cuse xlink:href='%23image0_1_47' transform='matrix(0.0133333 0 0 0.01375 0 -0.015625)'/%3E%3C/pattern%3E%3Cimage id='image0_1_47' width='75' height='75' xlink:href='data:image/png;base64,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'/%3E%3C/defs%3E%3C/svg%3E%0A") no-repeat;
+    cursor: pointer;
+    border: none;
+    background-position: center;
+    background-size: cover;
+
+    width: 52px;
+    height: 42px;
+
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -999px;
+    vertical-align: middle
+}
+
 
 /* ---- 카테고리 기본이미지 ---------------------- */
 .header-categ-box {
     display: flex;
     justify-content: flex-start;
     padding-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 12px;
+    
     gap: 0.6rem;
 
 }
 
 .header-categ{
+    
     background: #f0efef;
     opacity: 1;
     position: relative;
@@ -194,11 +210,9 @@
     border-radius: 10px;
    
     overflow: hidden;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    font-size: 0.6rem;
+    padding: 0.3rem 0.2rem 0.3rem 0.2rem; /* 수정 */
+    font-size: 8px;
+    /* flex-basis: 10px; */
 }
 
 

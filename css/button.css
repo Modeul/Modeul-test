@@ -68,12 +68,17 @@
     font-weight: bold;
 
     /* PointColor --------------- */
-    /* background-color: rgb(0, 152, 116); */
-    background-color: #FFCA4B;
-    /* background-color: rgb(136, 176, 75); */
-    /* background-color: #9b1b30; */
+    /* background-color: rgb(0, 152, 116); */   /*초록*/
+    background-color: #FFCA4B;            /*감자*/
+    /* background-color: rgb(136, 176, 75); */  /*연두*/
+    /* background-color: #9b1b30; */            /*빨강*/
 }
 /* ======================================== */
+
+
+
+
+ /* ======================================== */
 
 /* 충렬 */
 /* start */
@@ -142,3 +147,4 @@
     line-height: 13px;
     color: rgba(0, 0, 0, 0.7);
   }
+  /*  */
