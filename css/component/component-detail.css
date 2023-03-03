@@ -1,0 +1,141 @@
+.detail{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* detail : header */
+.detail-picture{
+    background-image: url(../../images/member/stuff/chick.jpg);
+    text-indent: -999px;
+    height: 255px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* detail : main */
+.detail-main{
+    display: flex;
+    flex-direction: column;
+    /* display: block;
+    text-align: justify; */
+}
+
+/* detail : main-heading */
+.detail-category{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color:rgb(138, 138, 139);
+}
+
+.detail-title{
+    font-size: 18px;
+}
+
+.detail-price-status{
+    display: flex;
+    font-size: 19px;
+    font-weight: 900;
+    flex-basis: 30%;
+}
+
+.detail-status{
+    font-size: 12px;
+    color:rgb(138, 138, 139);
+    border-radius: 10px;
+    background-color: rgb(235, 236, 237);
+    text-align: center;
+    margin: auto;
+    flex-basis: 50px;
+}
+
+.detail-heart{
+    font-size: 14px;
+    color:rgb(138, 138, 139);
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.detail-notice{
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+.detail-notice>ul{
+    font-size: 14px;;
+    font-weight: 400;
+    padding: 10px 0;
+    margin-left: 25px;
+}
+
+
+.detail-notice li>span{
+    margin-right: 30px;
+}
+
+.detail-contents{
+    height: 10%;
+    flex-grow: 3;
+    flex-shrink: 3;
+    overflow: auto;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+/* .detail-paragraph{
+    margin: 5px;
+    overflow-y: auto;
+} */
+
+/* .detail-paragraph::-webkit-scrollbar{
+    width: 10px;
+    
+}
+
+.detail-paragraph::-webkit-scrollbar-thumb{
+    background-color: rgb(208, 206, 206);
+} */
+
+
+
+.detail-join{
+    
+    display: grid;
+    grid-template-columns: repeat(2, minmax(60px, auto));
+    grid-template-rows: repeat(2, minmax(24px, auto));
+    grid-row-gap: 10%;
+    grid-column-gap: 10%;
+    grid-template-areas:
+        "h2 h2"
+        "list button"
+    ;
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    box-shadow: 5px gray;
+}
+
+.detail-join>h2:nth-child(2){
+    grid-area: h2;
+}
+
+.detail-join>div:nth-child(3){
+    grid-area: list;
+    justify-content: center;
+}
+
+.btn-join{
+    grid-area: button;
+    margin-bottom: 30px;
+    width: 50vw;
+}
+
+.detail-member-list{
+    text-align: center;
+    height: auto;
+    display: flex;
+}
+
