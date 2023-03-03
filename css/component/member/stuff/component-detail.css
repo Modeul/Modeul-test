@@ -1,0 +1,145 @@
+.detail{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* detail : main-notice */
+.detail-picture{
+    background-image: url(../../../../images/member/stuff/chick.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    width: 137px;
+    height: 130px;
+    margin: auto;
+    text-indent: -999px;
+}
+
+.detail-category{
+    margin-top: 42px;   /* orgin: 20px */
+    /* margin-bottom: 5px; */
+
+    font-size: 10px;    /* orgin: 14px */
+    color:rgb(138, 138, 139);
+}
+
+.detail-title{
+    margin-top: 3px;    /* 추가함 */
+    font-size: 15px;    /* orgin: 18px */
+}
+
+.detail-price-status{
+    display: flex;
+    margin-top: 4px;
+}
+
+.detail-price{
+    font-size: 19px;
+    font-weight: 900;
+    flex-basis: 60%;                 /* 여기 수정 */
+}
+
+.detail-status{
+    font-size: 12px;
+    color:rgb(138, 138, 139);
+    border-radius: 10px;
+    background-color: rgb(235, 236, 237);
+    text-align: center;
+    padding: 0.3rem 0.1rem 0.3rem 0.1rem;      /* 여기 수정 */
+    margin-left: 15px;
+    flex-basis: 60px;
+}
+
+.detail-heart{
+    font-size: 14px;
+    color:rgb(138, 138, 139);
+    flex-basis: 50%;
+    text-align: right;
+}
+
+/* detail : main-notice */
+.detail-notice{
+    margin-top: 20px;
+    border-radius: 10px;
+
+    /* PointColor --------------- */
+    /* background-color: rgb(235, 236, 237); */ /*회색*/
+    /* background-color: #e6f5f1; */            /*초록*/
+    background-color: #fffaed;             /*감자*/
+    /* background-color: #f5e8ea; */
+    /* background-color: #f5e8ea; */            /*빨강*/
+}
+
+.detail-notice>ul{
+    font-size: 14px;;
+    font-weight: 400;
+    padding: 10px 0;
+    margin-left: 25px;
+}
+
+
+.detail-notice-li{
+    margin-left: 30px;
+}
+
+/* detail : main-contents */
+.detail-content{
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.detail-paragraph{
+    margin: 5px;
+    height: 20vh;
+    overflow-y: hidden;
+}
+
+.detail-paragraph::-webkit-scrollbar{
+    width: 10px;
+    
+}
+
+.detail-paragraph::-webkit-scrollbar-thumb{
+    background-color: rgb(208, 206, 206);
+}
+
+.detail-join{
+    display: grid;
+    grid-template-columns: repeat(2, 60px); /* minmax(60px, auto) */
+    grid-template-rows: repeat(2, 24px);    /* minmax(24px, auto) */
+    grid-row-gap: 2%;           /* origin: 10% */
+    grid-column-gap: 2%;        /* origin: 10% */
+    grid-template-areas:
+        "h2 h2"
+        "list button"
+    ;
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    box-shadow: 5px gray;
+}
+
+.detail-join>h2:nth-child(2){
+    grid-area: h2;
+}
+
+.detail-join>div:nth-child(3){
+    grid-area: list;
+    justify-content: center;
+}
+
+.btn-join{
+    grid-area: but;
+    margin-bottom: 30px;
+    width: 50vw;  
+}
+
+.detail-member-li{
+    text-align: center;
+    display: flex;
+
+}
+

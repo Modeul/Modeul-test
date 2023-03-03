@@ -1,0 +1,53 @@
+@charset "UTF-8"; 
+
+.m-t-4{
+    margin-top: 60px;
+} 
+
+.li-gr-2 {
+    /* grid-template-columns: repeat(6, minmax(60px, auto)); */
+    grid-template-rows: repeat(3, minmax(24px, auto));
+    grid-row-gap: 1%;
+    grid-column-gap: 2%;
+    align-items: center;
+
+    grid-template-areas:
+        "pic tt tt tt tt ht"
+        "pic pr pr pr pr ht"
+        "pic mem dt dt dt ht"
+}
+
+.li-pic{
+    background-size: cover;
+
+    width: 70px;
+    height: 70px;
+}
+
+.li-title {
+    grid-area: tt;
+    font-size: 0.812rem;
+}
+
+.li-price {
+    grid-area: pr;
+    font-size: 0.5rem;
+}
+
+.li-member {
+    grid-area: mem;
+    font-size: 0.5rem;
+}
+
+.li-date {
+    grid-area: dt;
+    font-size: 0.5rem;
+}
+
+.li-heart {
+    justify-self: center;
+    grid-area: ht;
+    width: 14px;
+    height: 14px;
+    background-size:auto;
+}

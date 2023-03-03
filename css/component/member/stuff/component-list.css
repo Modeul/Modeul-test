@@ -1,12 +1,9 @@
 @charset "UTF-8";
 
-.canvas {
-    background: white;
-}
-
 .header-jc {
     justify-content: space-between;
 }
+
 
 .li-header-categ{
     padding-top: 0.1rem;
@@ -15,10 +12,11 @@
 
 
 .li-gr {
-    grid-template-columns: repeat(6, minmax(60px, auto));
+    /* grid-template-columns: repeat(6, minmax(60px, auto)); */
     grid-template-rows: repeat(3, minmax(24px, auto));
     grid-row-gap: 1%;
     grid-column-gap: 2%;
+    align-items: center;
     grid-template-areas:
         "pic ct ct . . ht"
         "pic subj subj subj subj ht"
@@ -27,12 +25,13 @@
 
 .li-categ {
     grid-area: ct;
+    
 }
 
 .li-pic {
     grid-area: pic;
     grid-area: pic;
-    background-image: url(../../images/member/stuff/chick.jpg);
+    background-image: url(../../../../images/member/stuff/chick.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -45,6 +44,7 @@
     text-indent: -999px;
     justify-self: center;
     align-self: center;
+    
 }
 
 .li-header-categ{
@@ -53,10 +53,12 @@
 
 }
 
-
 .li-subj {
     grid-area: subj;
+    font-size: 0.5rem;
 }
+
+
 
 .li-member {
     grid-area: mem;
@@ -70,8 +72,10 @@
 
 .li-heart {
     justify-self: center;
+    align-self: center;
     grid-area: ht;
     width: 14px;
     height: 14px;
+    background-size:auto;
 }
 
