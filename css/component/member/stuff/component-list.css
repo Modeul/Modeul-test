@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+.m-t-13px{
+    margin-top: 13px;
+}
+
+
 .header-jc {
     justify-content: space-between;
 }
@@ -8,6 +13,15 @@
 .li-header-categ{
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
+}
+
+/* gps 설정을 위한 select 태그 스타일링  */
+.gps-set{
+    border: none;
+}
+
+select:focus, option:focus{
+	outline: none;
 }
 
 
