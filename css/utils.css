@@ -69,56 +69,12 @@
     margin-top: 40px;
 } 
 
-
-
-
-.m-t-13px{
-    margin-top: 13px;
-}
-
-.m-t-15px{
-    margin-top: 15px;
-}
-
-.m-t-16px{
-    margin-top: 16px;
-}
-
-.m-t-21px{
-    margin-top: 21px;
-}
-
-.m-t-31px{
-    margin-top: 31px;
-}
-
-.m-t-38px{
-    margin-top: 38px;
-}
-
-.m-t-42px{
-    margin-top: 42px;
-}
-
-.m-t-44px{
-    margin-top: 44px;
-}
-
-.m-t-66px{
-    margin-top: 66px;
-}
-
+/* gps, index에서 사용 */
 .m-t-72px{
     margin-top: 72px;
 }
 
-.m-t-75px{
-    margin-top: 75px;
-}
 
-.m-t-126px{
-    margin-top: 126px;
-}
 
 
 
@@ -145,6 +101,7 @@
     margin-left: 20px;
 }
 
+/* gps, list-search에서 사용 */
 .m-l-6px{
     margin-left: 6px;
 }
