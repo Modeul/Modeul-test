@@ -3,11 +3,12 @@
     font-size: 16px;
     font-weight: bold;
 }
+
 /* detail : header */
 .detail-picture{
     background-image: url(../../images/member/stuff/chick.jpg);
-    text-indent: -999px;
-    height: 255px;
+    text-indent: -9999px;
+    height: 250px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23,7 +24,7 @@
 
 /* detail : main-heading */
 .detail-category{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 5px;
     font-size: 14px;
     color:rgb(138, 138, 139);
@@ -67,11 +68,11 @@
     font-size: 14px;;
     font-weight: 400;
     padding: 10px 0;
-    margin-left: 25px;
+    margin-left: 30px;
 }
 
-
 .detail-notice li>span{
+    text-align: start;
     margin-right: 30px;
 }
 
