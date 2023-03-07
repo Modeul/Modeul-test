@@ -20,7 +20,7 @@
     border: none;
 }
 
-select:focus, option:focus{
+.gps-set:focus, option:focus{
 	outline: none;
 }
 
