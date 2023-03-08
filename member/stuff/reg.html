@@ -106,10 +106,46 @@
                         <option class="" value="delivery-food">딜리버리 푸드</option>
                     </select>
 
-                    <div class="select-box">
+                    <div class="select-box btn-open-popup">
                         <label for="people-count" class="input-field-txt">인원수</label>
                         <input type="text" class="input-field" id="people-count">
                     </div>
+                    <div class="modal">
+                        <div class="modal_body">Modal <br> 모달 테스트 </div>
+                    </div>
+                    <script>
+                        const body = document.querySelector('body');
+                        const modal = document.querySelector('.modal');
+                        const btnOpenPopup = document.querySelector('.btn-open-popup');
+                        //classList 사용은 공백으로 구분된 문자열인 element.className을 통해 
+                        //엘리먼트의 클래스 목록에 접근하는 방식을 대체하는 간편한 방법이다.
+                        //Element.className : 특정 엘리먼트의 클래스 속성의 값을 가져오거나 설정할 수 있다.
+                        btnOpenPopup.addEventListener('click', () => {
+                          modal.classList.toggle('show'); //하나의 인수만 있을 때: 클래스 값을 토글링한다. 즉, 클래스가 존재한다면 제거하고 false를 반환하며, 
+                                                          //존재하지 않으면 클래스를 추가하고 true를 반환한다.
+                          
+                          if (modal.classList.contains('show')) { // 지정한 클래스 값이 엘리먼트의 class 속성에 존재하는지 확인한다.
+                            body.style.overflow = 'hidden'; // 'show'가 존재한다면 body에서 스크롤 불가.
+                          }
+                        });
+                  
+                        modal.addEventListener('click', (event) => {
+                          if (event.target === modal) { // .modal 영역을 클릭했다면
+                            modal.classList.toggle('show'); // 'show'를 다시 토글(클래스를 제거하고 false를 반환함)
+                  
+                            if (!modal.classList.contains('show')) { // modal의 클래스에 'show'가 존재하지 않는다면
+                              body.style.overflow = 'auto'; // body에서 스크롤이 가능하도록 해라.
+                            }
+                          }
+                        });
+                      </script>
+
+
+                    <!-- 복구용 코드 -->
+                    <!-- <div class="select-box">
+                        <label for="people-count" class="input-field-txt">인원수</label>
+                        <input type="text" class="input-field" id="people-count">
+                    </div> -->
                     
 
                     <!-- 모달 추가 -->
