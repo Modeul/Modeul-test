@@ -37,10 +37,11 @@
 }
 
 .li-gr {
-    /* grid-template-columns: repeat(6, minmax(60px, auto)); */
+    grid-template-columns: repeat(6, minmax(60px, auto));
     grid-template-rows: repeat(3, minmax(24px, auto));
     grid-row-gap: 1%;
     grid-column-gap: 2%;
+    align-items: center;
     grid-template-areas:
         "pic ct ct . . ht"
         "pic subj subj subj subj ht"
@@ -91,6 +92,7 @@
 
 .li-heart {
     justify-self: center;
+    align-self: center;
     grid-area: ht;
     width: 14px;
     height: 14px;
