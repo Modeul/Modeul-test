@@ -25,7 +25,7 @@
                 <div class="search-container">
                     <form action="" class="d-fl d-b-none search-form" method="get">
                         <h1 class="icon search-dodbogi m-l-6px">돋보기</h1>
-                        <input type="search" class="search-input m-l-6px"  placeholder="검색어 입력" >
+                        <input type="search" class="search-input m-l-6px"  placeholder="검색어 입력" onkeypress="search_result(event)">
                     </form>
                 </div>
         </header>
@@ -44,15 +44,48 @@
             </div>
         </div>
 
-        <main class="d-gr li-gr m-t-21px">
-            <div class="li-pic b-rad-1">사진</div>
-            <div class="li-categ header-categ li-header-categ">딜리버리 푸드</div>
-            <div class="li-heart icon icon-heart m-t-4">
-                찬하트
+        <main class="result-list d-none">
+            <div class="d-gr li-gr m-t-21px list-cl" onclick="location.href='detail.html'">
+                <div class="li-pic b-rad-1">사진</div>
+                <div class="li-categ header-categ li-header-categ">딜리버리 푸드</div>
+                <div class="li-heart icon icon-heart">
+                    찬하트
+                </div>
+                <div class="li-subj">서강대 앞 교촌치킨 시켜드실 분</div>
+                <div class="li-member">2/5</div>
+                <div class="li-date">2월 3일 금 18시까지</div>
             </div>
-            <div class="li-subj">서강대 앞 교촌치킨 시켜드실 분</div>
-            <div class="li-member">2/5</div>
-            <div class="li-date">2월 3일 금 18시까지</div>
+            <div>
+                <h1 class="icon icon-line">선 긋기</h1>
+            </div>
+
+            <div class="d-gr li-gr m-t-21px list-cl" onclick="location.href='detail.html'">
+                <div class="li-pic b-rad-1">사진</div>
+                <div class="li-categ header-categ li-header-categ">딜리버리 푸드</div>
+                <div class="li-heart icon icon-heart">
+                    찬하트
+                </div>
+                <div class="li-subj">서강대 앞 교촌치킨 시켜드실 분</div>
+                <div class="li-member">2/5</div>
+                <div class="li-date">2월 3일 금 18시까지</div>
+            </div>
+            <div>
+                <h1 class="icon icon-line">선 긋기</h1>
+            </div>
+            
+            <div class="d-gr li-gr m-t-21px list-cl" onclick="location.href='detail.html'">
+                <div class="li-pic b-rad-1">사진</div>
+                <div class="li-categ header-categ li-header-categ">딜리버리 푸드</div>
+                <div class="li-heart icon icon-heart">
+                    찬하트
+                </div>
+                <div class="li-subj">서강대 앞 교촌치킨 시켜드실 분</div>
+                <div class="li-member">2/5</div>
+                <div class="li-date">2월 3일 금 18시까지</div>
+            </div>
+            <div>
+                <h1 class="icon icon-line">선 긋기</h1>
+            </div>
         </main>
 
 
@@ -61,5 +94,29 @@
 
 
 </body>
+
+<script>
+    
+    // 검색 수정하기!!
+    function search_result(e){
+        const searchResult = document.querySelector('.result-list');
+        e.preventDefault();
+
+        
+        if(e.code == 'Enter' && searchResult.classList.contains('d-none')){
+            
+            searchResult.classList.remove('d-none');
+
+        }
+
+        else if(e.code == 'Enter' && searchResult.classList.contains('d-none')){
+            searchResult.classList.add('d-none');
+        }
+
+        
+
+    }
+
+</script>
 
 </html>
