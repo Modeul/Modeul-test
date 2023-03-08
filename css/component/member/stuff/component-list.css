@@ -1,27 +1,20 @@
 @charset "UTF-8";
 
-.m-t-13px{
-    margin-top: 13px;
-}
-
-
 .header-jc {
     justify-content: space-between;
 }
 
+.header-categ-box {
+    padding-bottom: 13px;
+}
 
-.li-header-categ{
+.list-cl {
+    margin-top: 4px;
+}
+
+.li-header-categ {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
-}
-
-/* gps 설정을 위한 select 태그 스타일링  */
-.gps-set{
-    border: none;
-}
-
-.gps-set:focus, option:focus{
-	outline: none;
 }
 
 
@@ -39,7 +32,7 @@
 
 .li-categ {
     grid-area: ct;
-    
+
 }
 
 .li-pic {
@@ -58,10 +51,10 @@
     text-indent: -999px;
     justify-self: center;
     align-self: center;
-    
+
 }
 
-.li-header-categ{
+.li-header-categ {
     margin: auto;
     margin-left: 0px;
 
@@ -69,10 +62,8 @@
 
 .li-subj {
     grid-area: subj;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
-
-
 
 .li-member {
     grid-area: mem;
@@ -90,6 +81,44 @@
     grid-area: ht;
     width: 14px;
     height: 14px;
-    background-size:auto;
+    background-size: auto;
 }
 
+/* -----사이드바--- */
+
+.side-bar {
+    margin-left: 70%;
+    height: 640px;
+    border: 1px solid rgb(219, 219, 219);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+   
+}
+
+.icon-close{
+    margin-left: 80%;
+    display: flex;
+    color: gray;
+
+}
+
+.welcome{
+    margin-top: 30%;
+    margin-left: 25%;
+}
+
+.side-menu {
+    margin-top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sidebar-padding{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 0.8rem;
+}

@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
-.m-t-21px{
-    margin-top: 21px;
+.header-categ-box{
+    padding-bottom: 13px;
 }
 
+.list-cl{
+    margin-top: 4px;
+}
 /* 서치박스 */
 
 .d-fl-al{
@@ -78,6 +81,7 @@
 
 .li-subj {
     grid-area: subj;
+    font-size: 0.8rem;
 }
 
 .li-member {
