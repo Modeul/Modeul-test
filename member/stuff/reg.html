@@ -106,14 +106,43 @@
                         <option class="" value="delivery-food">딜리버리 푸드</option>
                     </select>
 
-                    <div class="select-box btn-open-popup">
+                    <div class="select-box2 d-fl">
                         <label for="people-count" class="input-field-txt">인원수</label>
-                        <input type="text" class="input-field" id="people-count">
+                            <div class="people-count-box">
+                                <input class="btn-minus" id="people-count"
+                                    type="button" onclick='count("minus")' value="">
+
+                                <div class="people-count-num" id="result">1</div>
+                                
+                                <input class="btn-plus" id="people-count"
+                                    type="button" onclick='count("plus")' value="">
+                            </div>
                     </div>
+                            <!-- <input type="text" class="input-field" id="people-count"> -->
+
+                    <script>
+                        function count(type)  {
+                          // 결과를 표시할 element
+                          const resultElement = document.getElementById('result');
+                          
+                          // 현재 화면에 표시된 값
+                          let number = resultElement.innerText;
+                          
+                          // 더하기/빼기
+                          if(type === 'plus') {
+                            number = parseInt(number) + 1;
+                          }else if(type === 'minus')  {
+                            number = parseInt(number) - 1;
+                          }
+                          
+                          // 결과 출력
+                          resultElement.innerText = number;
+                        }
+                        </script>
                     <div class="modal">
                         <div class="modal_body">Modal <br> 모달 테스트 </div>
                     </div>
-                    <script>
+                    <!-- <script>
                         const body = document.querySelector('body');
                         const modal = document.querySelector('.modal');
                         const btnOpenPopup = document.querySelector('.btn-open-popup');
@@ -138,7 +167,7 @@
                             }
                           }
                         });
-                      </script>
+                    </script> -->
 
 
                     <!-- 복구용 코드 -->
@@ -154,7 +183,7 @@
                     <div id="btn-date" class="select-box">
                         <label for="date" class="input-field-txt">날짜</label>
 
-                        <input type="datetime-local" id="date" class="input-field" name="date-start"
+                        <input type="datetime-local" id="date" class="input-field2" name="date-start"
                         value="2023-02-26"
                         min="2020-01-01" max="2025-12-31">
                     </div>
@@ -169,9 +198,10 @@
                         <input type="text" class="input-field" id="url">
                     </div>
     
-                    <div class="select-box select-content">
-                        <label for="content" class="input-field-txt">내용</label>
-                        <input type="text" class="input-field input-content" id="content">
+                    <div class="select-box select-content d-fl fl-dir-col">
+                        <label for="content" class="input-field-txt2">내용</label>
+                        <!-- <input type="text" class="input-field input-content" id="content"> -->
+                        <textarea class="input-field input-content" name="" id="" cols="30" rows="10"></textarea>
                     </div>
                 </form>
             </main>

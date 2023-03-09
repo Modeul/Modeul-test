@@ -65,3 +65,10 @@ a{
 a:hover{
 	text-decoration: underline;
 }
+
+/* 텍스트 에어리어 */
+textarea{
+	border: none;
+	resize: none;
+
+}

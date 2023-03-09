@@ -251,18 +251,46 @@
 
     cursor: pointer;
 }
+.select-box2{ 
+    border: 1px solid #E4DFDF;  /* 원래 F0F2F3 */
+    
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+
+    background-color: #fff;
+    margin-top: 10px; 
+    font-size: 12px;
+
+    line-height: 40px;
+}
 
 /* ---- input-field ---------------------- */
 
 .input-field-txt{
-    margin-left: 15px
+    display: inline-block;
+    margin-left: 15px;
+    width: 50px;
+}
+.input-field-txt2{
+    display: inline;
+    margin-left: 15px;
+    width: 200px;
+    /* background-color: #CA8D94; */
 }
 
 .input-field{
-    margin-left: 50px;
+    display: inline-block;
+    margin-left: 30px;
     height: 70%;
     width: 170px;
+    /* background-color: #7bb1ce; */
 
+}
+.input-field2{
+    margin-left: 30px;
+    height: 70%;
+    width: 200px;
 }
 
 

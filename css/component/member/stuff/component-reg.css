@@ -57,12 +57,21 @@
 
 
 .input-content{
-    width: 200px;
-    height: 80%;
-    margin-top: 10%;
+    width: 80%;
+    height: 70%;
+    margin-top: 1%;
+    border: none;
+    overflow: auto;
 }
-
-
+.people-count-box{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+.people-count-num{
+   width: 30px;
+   text-align: center;
+}
 
 
 
