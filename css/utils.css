@@ -184,6 +184,10 @@
     align-content: space-around;
 }
 
+.fl-1{
+    flex: 1;
+}
+
 
 
 

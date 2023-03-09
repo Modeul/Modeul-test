@@ -133,6 +133,18 @@
     display: inline-block;
     text-indent: -9999px;
 }
+
+/*  */
+.icon-modal-close{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='48' viewBox='0 96 960 960' width='48'%3E%3Cpath d='m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+}
 /* ======================================== */
 
 .icon-heart{

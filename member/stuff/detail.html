@@ -12,71 +12,100 @@
     <link href="../../css/component/member/stuff/component-detail.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <section class="detail">
-        <!-- =================== detail : header =================== -->
-        <header class="h-75">
-            <h1 class="d-none">header</h1>
-            <div>
-                <a class="icon icon-back" href="./list.html">뒤로가기</a>
-            </div>
-            <div class="detail-picture">사진</div>
+    <!-- detail -->
+    <div class="detail">
+
+        <!-- detail-header -->
+        <header>
+            <a class="icon icon-back">뒤로가기</a>
         </header>
 
-        <main class="canvas detail-main">
-            <!-- =================== detail : main-heading =================== -->
-            <section>
-                <h1 class="d-none">heading</h1>
-                <div class="detail-category">대형마트 대량 물품</div>
-                <p class="detail-title">금요일에 같이 치킨 드실 분?</p>
-                <div class="detail-price-status">
-                    <div class="detail-price">22,000원</div>
-                    <div class="detail-status">모집중</div>      <!-- class 변경함 -->
-                    <div class="detail-heart" >찜</div>
-                    <div class="icon-heart">하트</div>
-                </div>
-            </section>
+        <!-- detail-main -->
+        <main class="fl-1">
+            <div class="detail-main">
+                <!-- detail-main-imgs -->
+                <section class="detail-main-imgs">
+                    <h1 class="d-none">이미지</h1>
+                    <div class="detail-img">이미지</div>
+                </section>
 
-            <!-- =================== detail : main-notice =================== -->
-            <section class="detail-notice">
-                <h1 class="d-none">notice</h1>
-                <ul>
-                    <!-- <li class="m-1"><span>•인원</span><span class="detail-no-li">2/5</span></li> -->
-                    <!-- <li><span>•인원</span><span class="detail-no-li">2/5</span></li> -->
-                    <li><span>•인원</span><span>2 / 5</span></li>
-                    <li><span>•기한</span><span>2월 10일 13:00</span></li>
-                    <li><span>•장소</span><span>땡땡아파트 정문</span></li>
-                </ul>
-            </section>
-            <!-- =================== detail : main-contents =================== -->
-            <section class="detail-contents">
-                <h1 class="d-none">contents</h1>
-                <!-- <div class="detail-paragraph"> -->
-                <p>hi<br>
-                    hi<br>
-                    hi<br>
-                    hi<br>
-                    hi<br>
-                </p>
-                <!-- </div> -->
-            </section>
-        </main>
-        <!-- =================== detail : join =================== -->
-        <section class="canvas detail-join">
-            <h1 class="d-none">participate</h1>
-            <h2>참여중인 사람</h2>
-            <div class="detail-member-list">
-                <div class="icon-member">사람1</div>
-                <div class="icon-member">사람2</div>
-                <div class="icon-member">사람3</div>
-                <div class="icon-member">사람4</div>
-                <div class="icon-member">사람5</div>
+                <!-- detail-main-heading -->
+                <section class="canvas detail-main-heading">
+                    <h1 class="d-none">heading</h1>
+                    <div class="detail-category">대형마트 대량 물품</div>
+                    <p class="detail-title">금요일에 같이 치킨 드실 분?</p>
+                    <div class="d-fl">
+                        <div class="detail-price">22,000원</div>
+                        <div class="detail-status">모집중</div>
+                        <div class="detail-heart" >찜</div>
+                        <div class="icon-heart">하트</div>
+                    </div>
+                </section>
+
+                <!-- detail-main-info- -->
+                <section class="detail-main-info canvas">
+                    <h1 class="d-none">info</h1>
+                    <div class="detail-info-members">•인원</div>
+                    <div class="detail-members-value">2 / 5</div>
+                    <div class="detail-info-date">•기한</div>
+                    <div class="detail-date-value">2월 10일 13:00</div>
+                    <div class="detail-info-place">•장소</div>
+                    <div class="detail-place-value">땡땡아파트 정문</div>
+                </section>
+
+                <!-- detail-main-writing -->
+                <section class="canvas detail-main-writing">
+                    <h1 class="d-none">writing</h1>
+                    <p class="detail-paragraph"> 
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+                        hi<br>
+           
+                    </p>   
+                </section>
             </div>
-            <button class="btn-default btn-join" onclick="location.href='../participation/list.html'">참여하기</button>
-        </section>
-    </section>
-</body>
-<script>
+        </main>
 
-</script>
+        <!-- detail-join -->
+        <section class="canvas detail-join">
+            <h1 class="d-none">join</h1>
+            <h2>참여중인 사람</h2>
+            <div class="detail-join-members">
+                <a class="icon-member">멤버a</a>
+                <a class="icon-member">멤버b</a>
+                <a class="icon-member">멤버c</a>
+                <a class="icon-member">멤버d</a>
+                <a class="icon-member">멤버e</a>
+            </div>
+            <button class="detail-join-button">참여하기</button>
+        </section>
+
+    </div>
+</body>
+
 </html>
 
