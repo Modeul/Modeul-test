@@ -10,6 +10,32 @@
     <link href="../../css/style.css" type="text/css" rel="stylesheet">
     <link href="../../css/button.css" type="text/css" rel="stylesheet">
     <link href="../../css/component/member/stuff/component-detail.css" type="text/css" rel="stylesheet">
+    <script>
+       
+    
+        // img.addEventListener('click', ()=>{
+        // modalDisplay("block");
+        // modalImg.src = img.src;
+        // });
+        // function modalDisplay(text){
+        // modal.style.display = text;
+        // }
+
+        window.addEventListener("load", function(){
+            var modal = document.querySelector(".detail-main-modal");
+            var img = document.querySelector(".detail-img");
+            // var imgUrl =  "../../../../images/member/stuff/chick.jpg";
+
+            var modalImg = document.querySelector(".detail-modal-img");
+            var close = document.querySelector(".close-button");
+
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            }
+        });
+        
+    </script>
 </head>
 <body>
     <!-- detail -->
@@ -20,13 +46,20 @@
             <a class="icon icon-back">뒤로가기</a>
         </header>
 
-        <!-- detail-main -->
         <main class="fl-1">
+            <!-- detail-main -->
             <div class="detail-main">
                 <!-- detail-main-imgs -->
                 <section class="detail-main-imgs">
                     <h1 class="d-none">이미지</h1>
                     <div class="detail-img">이미지</div>
+                </section>
+
+                <!-- detail-main-modal-imgs -->
+                <section id="detailModal" class="detail-main-modal">
+                    <h1 class="d-none">이미지</h1>
+                    <div id="modalImg" class="detail-modal-img">이미지</div>
+                    <div class="close-button">닫기</div>
                 </section>
 
                 <!-- detail-main-heading -->
