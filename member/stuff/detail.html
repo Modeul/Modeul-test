@@ -10,63 +10,49 @@
     <link href="../../css/style.css" type="text/css" rel="stylesheet">
     <link href="../../css/button.css" type="text/css" rel="stylesheet">
     <link href="../../css/component/member/stuff/component-detail.css" type="text/css" rel="stylesheet">
+
+    <!-- detail-modal -->
     <script>
-       
-    
-        // img.addEventListener('click', ()=>{
-        // modalDisplay("block");
-        // modalImg.src = img.src;
-        // });
-        // function modalDisplay(text){
-        // modal.style.display = text;
-        // }
-
         window.addEventListener("load", function(){
-            var modal = document.querySelector(".detail-main-modal");
+            var modal = document.querySelector(".detail-modal");
             var img = document.querySelector(".detail-img");
-            // var imgUrl =  "../../../../images/member/stuff/chick.jpg";
-
-            var modalImg = document.querySelector(".detail-modal-img");
-            var close = document.querySelector(".close-button");
+            var modalImg = document.querySelector(".modal-img");
+            var closeIcon = document.querySelector(".icon-close");
 
             img.onclick = function(){
             modal.style.display = "block";
-            modalImg.src = this.src;
+            modalImg.src = img.src;
             }
         });
-        
+
     </script>
+
 </head>
 <body>
-    <!-- detail -->
+    <!-- detail : flex-container -->
     <div class="detail">
-
-        <!-- detail-header -->
         <header>
             <a class="icon icon-back">뒤로가기</a>
         </header>
 
-        <main class="fl-1">
-            <!-- detail-main -->
+        <!-- detail - item1  -->
+        <main>
+            <!-- detail-main : flex-container -->
             <div class="detail-main">
-                <!-- detail-main-imgs -->
-                <section class="detail-main-imgs">
-                    <h1 class="d-none">이미지</h1>
-                    <div class="detail-img">이미지</div>
+                <!-- detail-img : detail-main - item1 -->
+                <section class="detail-img">
+                    <img src="../../../../images/member/stuff/chick.jpg" alt="img">
+                    <div class="detail-modal">
+                        <img class="modal-img">
+                        <div class=".icon-close"></div>
+                    </div>
                 </section>
 
-                <!-- detail-main-modal-imgs -->
-                <section id="detailModal" class="detail-main-modal">
-                    <h1 class="d-none">이미지</h1>
-                    <div id="modalImg" class="detail-modal-img">이미지</div>
-                    <div class="close-button">닫기</div>
-                </section>
-
-                <!-- detail-main-heading -->
-                <section class="canvas detail-main-heading">
+                <!-- detail-heading : detail-main - item2 -->
+                <section class="canvas detail-heading">
                     <h1 class="d-none">heading</h1>
                     <div class="detail-category">대형마트 대량 물품</div>
-                    <p class="detail-title">금요일에 같이 치킨 드실 분?</p>
+                    <p class="detail-heading-title">금요일에 같이 치킨 드실 분?</p>
                     <div class="d-fl">
                         <div class="detail-price">22,000원</div>
                         <div class="detail-status">모집중</div>
@@ -74,20 +60,18 @@
                         <div class="icon-heart">하트</div>
                     </div>
                 </section>
-
-                <!-- detail-main-info- -->
-                <section class="detail-main-info canvas">
+                <!-- detail-info : detail-main - item3 -->
+                <section class="canvas detail-info">
                     <h1 class="d-none">info</h1>
-                    <div class="detail-info-members">•인원</div>
-                    <div class="detail-members-value">2 / 5</div>
-                    <div class="detail-info-date">•기한</div>
-                    <div class="detail-date-value">2월 10일 13:00</div>
-                    <div class="detail-info-place">•장소</div>
-                    <div class="detail-place-value">땡땡아파트 정문</div>
+                    <div>•인원</div>
+                    <div>2 / 5</div>
+                    <div>•기한</div>
+                    <div>2월 10일 13:00</div>
+                    <div>•장소</div>
+                    <div>땡땡아파트 정문</div>
                 </section>
-
-                <!-- detail-main-writing -->
-                <section class="canvas detail-main-writing">
+                <!-- detail-writing : detail-main - item4 -->
+                <section class="canvas detail-writing">
                     <h1 class="d-none">writing</h1>
                     <p class="detail-paragraph"> 
                         hi<br>
@@ -102,31 +86,16 @@
                         hi<br>
                         hi<br>
                         hi<br>
-                        hi<br>
-                        hi<br>
-                        hi<br>
-                        hi<br>
-                        hi<br>
-                        hi<br>
-                        hi<br>
-                        hi<br>
-                        hi<br>
-                        hi<br>
-                        hi<br>
-                        hi<br>
-                        hi<br>
-                        hi<br>
-                        hi<br>
-           
                     </p>   
                 </section>
             </div>
         </main>
 
-        <!-- detail-join -->
+        <!-- detail-join : detail - itme2  -->
+        
         <section class="canvas detail-join">
             <h1 class="d-none">join</h1>
-            <h2>참여중인 사람</h2>
+            <h2 class="detail-join-title">참여중인 사람</h2>
             <div class="detail-join-members">
                 <a class="icon-member">멤버a</a>
                 <a class="icon-member">멤버b</a>
@@ -136,7 +105,8 @@
             </div>
             <button class="detail-join-button">참여하기</button>
         </section>
-
+        
+        
     </div>
 </body>
 

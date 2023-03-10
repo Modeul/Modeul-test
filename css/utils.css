@@ -184,11 +184,14 @@
     align-content: space-around;
 }
 
+/*  */
 .fl-1{
     flex: 1;
 }
-
-
+/*  */
+.h-100{
+    height:80%;
+}
 
 
 /* ---- grid ---------------------- */
