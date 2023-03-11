@@ -1,31 +1,32 @@
 @charset "UTF-8"; 
 
-.m-t-68px{
-  margin-top: 68px;
+/* 그라디언트 */
+.circle{
+    position: fixed;
+    left: 200px;
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    display: inline-block;
+    background : radial-gradient(circle closest-side at 100% 0%,red,blue,white) ;
 }
 
-  /* flex-container */
+/* flex-container */
 .header-container{
     display: flex;
     justify-content: center;
 }
+
+/* input-box */
 .input-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 126px;
+    margin-top: 77px;
     align-items: center;
 }
-.find-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
 
-  /*  */
-
-/* input-box */
 .input-text{
     border: none;
     margin-top: 8px;
@@ -35,18 +36,6 @@
     line-height: 20px;
 }
 
-.find-text{
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-}
-.signup-text{
-    font-weight: 800;
-    font-size: 15px;
-    line-height: 20px;
-    color: #222222;
-}
-  /*  */
 
 /* sign-up-label-img */
 
