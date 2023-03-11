@@ -8,6 +8,7 @@
     text-align: center;
     color: #253232;
   }
+
 .title{
     font-weight: 700;
     font-size: 20px;
@@ -38,6 +39,8 @@
   text-align: center;
   color: #424242;
 }
+
+/* 사용자 페이지 */
 label {
   padding-left: 30px;
   background-repeat: no-repeat;
