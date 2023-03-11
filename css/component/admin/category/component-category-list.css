@@ -1,0 +1,22 @@
+@charset "UTF-8"; 
+
+
+/* flex-container */
+.header-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.list-admin-main{
+  width: 100%;
+}
+
+.categoryplus{
+  width: 100%;
+}
+
+.tablebox-admin{
+  width: 100%;
+}
