@@ -16,6 +16,9 @@
   margin-top: 44px;
 }
 
+.m-t-69px{
+  margin-top: 69px;
+}
 
 .sign-up-container{
   display: flex;
@@ -78,9 +81,9 @@
 
 .input-text-2{
   width: 200px;
-  margin-top: 7px;
-  font-size: 10px;
-  line-height: 13px;
+  margin-top: 5px;
+  /* font-size: 10px; */
+  /* line-height: 15 px; */
   border: none;
   background: none;
 }

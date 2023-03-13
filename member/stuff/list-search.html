@@ -11,6 +11,7 @@
     <link href="../../css/utils.css" type="text/css" rel="stylesheet">
     <link href="../../css/style.css" type="text/css" rel="stylesheet">
     <link href="../../css/component/member/stuff/component-list-search.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../../js/member/stuff/list-search.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                 <div class="search-container">
                     <form action="" class="d-fl d-b-none search-form" method="get">
                         <h1 class="icon search-dodbogi m-l-6px">돋보기</h1>
-                        <input type="search" class="search-input m-l-6px"  placeholder="검색어 입력" onkeypress="search_result(event)">
+                        <input type="search" id="search-bar" class="search-input m-l-6px"  placeholder="검색어 입력">
                     </form>
                 </div>
         </header>
@@ -94,28 +95,5 @@
 
 
 </body>
-
-<script>
-    
-    // 검색 수정하기!!
-    function search_result(e){
-        const searchResult = document.querySelector('.result-list');
-
-        // 이벤트 발생 시, 충돌나지 말라고 쓰는 것이다. 
-        // 보통, CSR에서 a태그에 쓰인다. 페이지 로드될 때, 로드 시키고 데이터만 바뀌기 때문에 a 태그의 기본 기능을 무력화시켜야 한다. 
-        e.preventDefault(); 
-
-        
-        if(e.code == 'Enter' && searchResult.classList.contains('d-none')){
-            searchResult.classList.remove('d-none');
-        }
-
-        else if(e.code == 'Enter' && searchResult.classList.contains('d-none')){
-            searchResult.classList.add('d-none');
-        }
-
-    }
-
-</script>
 
 </html>

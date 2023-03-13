@@ -13,7 +13,7 @@
     <link href="../../css/button.css" type="text/css" rel="stylesheet">
     <link href="../../css/component/member/stuff/component-reg.css" type="text/css" rel="stylesheet">
     <!-- <link href="../../css/component/component.css" type="text/css" rel="stylesheet"> -->
-
+    <script type="text/javascript" src="../../js/member/stuff/reg.js"></script>
 </head>
 
 <body>
@@ -124,7 +124,7 @@
                             </div>
                     </div>
                     <!-- 인원수 조절 JS -->
-                    <script>
+                    <!-- <script>
                         function count(type)  {
                           // 결과를 표시할 element
                           const resultElement = document.getElementById('result');
@@ -139,7 +139,7 @@
                           // 결과 출력
                           resultElement.innerText = number;
                         }
-                        </script>
+                        </script> -->
                         
                  <div id="btn-date" class="select-box d-fl jf-sb">
                     <label for="datetime-local" class="input-field-txt">마감시간</label>
@@ -234,39 +234,4 @@
     </section >
 </body>
 
-
-<!-- =============== JS 코드 ================= -->
-<script>
-    const reg2 = document.querySelector('.reg2-form');
-    const reg1 = document.querySelector('.reg1-form');
-    const btnReg = document.querySelector('.btn-next');
-    const backArrow = document.querySelector('.reg2-back');
-
-    // const showDate = document.querySelector('#btn-date');
-    // const dateDialog = document.querySelector('#date-dialog');
-    // const closeDate= document.querySelector('#btn-close');
-    // const confirmDate = document.querySelector('#btn-confirm');
-
-    btnReg.addEventListener('click', () => {
-        // console.log("다음 출력");
-        reg1.classList.toggle('d-none');
-        reg2.classList.toggle('d-none');
-    });
-
-    backArrow.addEventListener('click', () => {
-        // console.log("뒤로가기 출력");
-        reg2.classList.toggle('d-none');
-        reg1.classList.toggle('d-none');
-    });
-
-    // 모달 동작
-    // showDate.addEventListener('click', () => {
-    //     dateDialog.showModal();
-    // });
-
-    // closeDate.addEventListener('click', () => {
-    //     dateDialog.close();
-    // });
-
-</script>
 </html>
