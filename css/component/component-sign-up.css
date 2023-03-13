@@ -78,9 +78,9 @@
 
 .input-text-2{
   width: 200px;
-  margin-top: 7px;
-  font-size: 10px;
-  line-height: 13px;
+  margin-top: 5px;
+  /* font-size: 10px; */
+  /* line-height: 15 px; */
   border: none;
   background: none;
 }

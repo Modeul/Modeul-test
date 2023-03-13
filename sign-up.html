@@ -71,6 +71,7 @@
             <label for="uid" class="email-label">
               <span class="d-none">email</span>
             <input type="text" id="email" name="email" class="input-text-2" placeholder="이메일을 입력해주세요.">
+            <input class="btn-post" id="btn-post" type="button" value="전송">
             </label>
            </div>
 
@@ -78,13 +79,9 @@
             <label for="uid" class="email-confirm-label">
               <span class="d-none">email-confirm</span>
             <input type="text" id="email" name="email" class="input-text-2" placeholder="이메일 인증번호를 입력해주세요.">
+            <input class="btn-auth" id="btn-auth"type="button" value="확인">
             </label>
            </div>
-
-            <div class="btn-email">
-              <input class="btn-post" type="button" value="전송">
-              <input class="btn-auth" type="button" value="확인">
-            </div>
             
             <div class="m-t-38px">
               <input class="btn-3" type="submit" value="가입하기">
@@ -97,6 +94,23 @@
     </main>
   
 </div>
+
+
+<script>
+  let b1= document.getElementById('btn-post');
+  let b2= document.getElementById('btn-auth');
+
+  b1.addEventListener('click',function(event){
+    alert('인증번호가 전송되었습니다.');
+  });
+
+  b2.addEventListener('click',function(event){
+    alert('이메일이 확인되었습니다.');
+  });
+
+  // https://wooncloud.tistory.com/12 나중에 참고할 플러그인
+</script>
+
 
 </body>
 </html>
