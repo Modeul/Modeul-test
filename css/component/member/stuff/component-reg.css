@@ -22,6 +22,7 @@
 
 
 .categ-eff:active{
+    border-radius: 10px;
     background-color: #F0F2F3;
 }
 

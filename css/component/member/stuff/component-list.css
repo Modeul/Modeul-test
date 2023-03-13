@@ -58,17 +58,17 @@
 
 .li-subj {
   grid-area: subj;
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
 }
 
 .li-member {
   grid-area: mem;
-  font-size: 0.5rem;
+  font-size: 0.75rem;
 }
 
 .li-date {
   grid-area: dt;
-  font-size: 0.5rem;
+  font-size: 0.75rem;
 }
 
 .li-heart {
@@ -145,12 +145,12 @@ input[id="menuicon"]:checked + label + div {
   right: 0;
 }
 .welcome {
-  padding-top: 100%;
+  margin-top: 100px;
   margin-left: 15%;
-  font-size: 0.9rem;
+  font-size: 1.099rem;
 }
 .side-menu {
-  margin-top: 50%;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -159,8 +159,7 @@ input[id="menuicon"]:checked + label + div {
   align-items: center;
 }
 .sidebar-padding {
-  padding-top: 15%;
-  padding-bottom: 15%;
+  margin-top: 35%;
   font-size: 1rem;
   cursor: pointer;
 }

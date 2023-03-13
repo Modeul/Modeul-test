@@ -53,11 +53,11 @@
 }
 
 .f-size-1 {
-  font-size: 12px;
+  font-size: 0.88em; /* 원래 12px인데 13px 맞추기 */ 
 }
 
 .f-size-2 {
-  font-size: 18px;
+  font-size: 1.125em; /* 원래 18px */
 }
 
 .f-size-3 {
