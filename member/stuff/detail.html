@@ -10,21 +10,54 @@
     <link href="../../css/style.css" type="text/css" rel="stylesheet">
     <link href="../../css/button.css" type="text/css" rel="stylesheet">
     <link href="../../css/component/member/stuff/component-detail.css" type="text/css" rel="stylesheet">
-
-    <!-- detail-modal -->
+    <!-- <script type="text/javascript" src="../../detail.js"> -->
+<style>
+    /* .detail-modal {
+        display: block; 
+        position: absolute;
+        bottom: 0;
+        height: 100px;
+    } */
+</style>
     <script>
+
         window.addEventListener("load", function(){
-            var modal = document.querySelector(".detail-modal");
-            var img = document.querySelector(".detail-img");
-            var modalImg = document.querySelector(".modal-img");
-            var closeIcon = document.querySelector(".icon-close");
+
+            var detailSection = document.querySelector(".detail");
+
+            var modal = detailSection.querySelector(".detail-modal");
+            var img = detailSection.querySelector(".detail-img");
+            var modalImg = detailSection.querySelector(".modal-img");
+            var closeIcon = detailSection.querySelector(".icon-close");
 
             img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = img.src;
+                modal.style.display = 'block';
+                modalImg.src = "../../images/member/stuff/chick.jpg";
+            };
+
+            closeIcon.onclick = function(){
+                event.stopPropagation();
+                modal.style.display = 'none';
             }
+
+            // closeIcon.addEventListener("click", function(){
+
+            //     if(modal.style.display == "none"){
+            //         modal.style.display == "block";
+            //     }else{
+            //         modal.style.display == "none"
+            //     }
+            // });
+        
         });
 
+        
+
+
+
+        
+        
+        
     </script>
 
 </head>
@@ -40,13 +73,21 @@
             <!-- detail-main : flex-container -->
             <div class="detail-main">
                 <!-- detail-img : detail-main - item1 -->
-                <section class="detail-img">
+                <div class="detail-img">
                     <img src="../../../../images/member/stuff/chick.jpg" alt="img">
+                    
+                    <!-- image : modal -->
                     <div class="detail-modal">
+                        
+                        <div class="icon-close" src="../../images/member/stuff/heart.png">&times;</div>
+                        <!-- <img class="icon-close" src="../../images/member/stuff/heart.png"> -->
                         <img class="modal-img">
-                        <div class=".icon-close"></div>
                     </div>
-                </section>
+
+                    <!-- image : slideshow -->
+                    
+                    
+                </div>
 
                 <!-- detail-heading : detail-main - item2 -->
                 <section class="canvas detail-heading">
@@ -109,6 +150,7 @@
         
     </div>
 </body>
+
 
 </html>
 
