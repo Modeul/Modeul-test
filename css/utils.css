@@ -267,12 +267,13 @@
     align-content: space-around;
 }
 
-.jf-fs{
-    justify-content: flex-start;
+/*  */
+.fl-1{
+    flex: 1;
 }
-
-.jf-fe{
-    justify-content: flex-end;
+/*  */
+.h-100{
+    height:80%;
 }
 
 .jf-fe-self{
