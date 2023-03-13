@@ -86,7 +86,9 @@
 .m-t-77px{
     margin-top: 77px;
 }
-
+.m-t-109px{
+    margin-top: 109px;
+}
 
 .m-t-138px{
     margin-top: 138px;
@@ -120,6 +122,9 @@
 
 .m-l-3{
     margin-left: 20px;
+}
+.m-l-auto{
+    margin-left: auto;
 }
 
 /* gps, list-search에서 사용 */
@@ -224,6 +229,10 @@
 
 .d-in-block{
     display: inline-block;
+}
+
+.d-block{
+    display: block;
 }
 
 
@@ -386,4 +395,8 @@
     box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
   
     transform: translateX(-50%) translateY(-50%);
+  }
+
+  .txt-c{
+    text-align: center;
   }

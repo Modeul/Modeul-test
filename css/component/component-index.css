@@ -12,6 +12,9 @@
   margin-top: 127px;
 }
 .start-text{
+  display: block;
+
+
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
