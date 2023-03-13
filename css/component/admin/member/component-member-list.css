@@ -2,10 +2,6 @@
 
 
 /* flex-container */
-.header-container{
-    display: flex;
-    justify-content: center;
-}
 
 .tablebox-admin{
   width: 80%;

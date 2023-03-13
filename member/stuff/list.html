@@ -20,9 +20,10 @@
         <section class="canvas p-rel b-rad-2">
             <header class="d-fl-al header-jc">
 
-                <select class="selectbox-set">
-                    <option>신수동</option>
-                    <option>GPS설정</option>
+                <select class="selectbox-set" onchange="if(this.value) location.href=(this.value);">
+                    <option value="">신수동</option>
+                    <option value="">신설동</option>
+                    <option value="gps.html">GPS설정</option>
                 </select>
 
                 <div>

@@ -2,12 +2,6 @@
 
 
 /* flex-container */
-.header-container{
-    display: flex;
-    justify-content: center;
-}
-
-
 
 .list-admin-main{
   width: 100%;

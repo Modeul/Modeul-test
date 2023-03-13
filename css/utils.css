@@ -276,6 +276,10 @@
     height:80%;
 }
 
+.jf-fe{
+    justify-content: flex-end;
+}
+
 .jf-fe-self{
     justify-self: flex-end;
 }

@@ -1,13 +1,8 @@
 @charset "UTF-8"; 
 
-@charset "UTF-8"; 
-
 
 /* flex-container */
-.header-container{
-    display: flex;
-    justify-content: center;
-}
+
 
 .tablebox-admin{
   width: 80%;

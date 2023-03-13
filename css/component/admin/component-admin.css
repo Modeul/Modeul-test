@@ -10,10 +10,12 @@
 
 .search-container-admin {
     display: flex;
+    flex-direction: row;
+
     justify-content: flex-end;
     border-radius: 10px;
   
-    width: 30%;            /* 여기 수정 */
+    width: 100%;            /* 여기 수정 */
     margin-right: 144px;
 }
 

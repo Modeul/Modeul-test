@@ -18,7 +18,7 @@
         
         <header>
             <div class="header-container">
-                <h1 class="logo m-t-138px">mo_deul</h1>
+                <h1 class="logo-main logo-moduel m-t-138px">mo_deul</h1>
             </div>
         </header>
 
@@ -48,10 +48,46 @@
             </div>
         </aside>
 
+        <aside class="admin-sidebar2 d-none">
+            <h1 class="d-none">사이드바</h1>
+            <div class="iconbox-admin">
+                <div>
+                    <a href="" class="icon-admin icon-menu2">메뉴</a>
+                </div>
+                <div>
+                    <h1 class="logo-admin">mo_deul</h1>
+                </div>  
+            </div>
+
+            <div class="m-t-218px">
+                <div class="iconbox-admin" >
+                    <a href="" class="icon-admin1 icon-home">홈</a>
+                    <h1 class="label-admin">홈</h1>
+                </div>
+                <div class="iconbox-admin m-t-35px">
+                    <a href="" class="icon-admin1 icon-membermanage">회원 관리</a>
+                    <h1 class="label-admin">회원 관리</h1>
+                </div>
+                <div class="iconbox-admin m-t-35px">
+                    <a href="" class="icon-admin1 icon-stuffmanage">게시글 관리</a>
+                    <h1 class="label-admin">게시글 관리</h1>
+                </div>
+                <div class="iconbox-admin m-t-35px">
+                    <a href="" class="icon-admin1 icon-category">카테고리 관리</a>
+                    <h1 class="label-admin">카테고리 관리</h1>
+                </div>
+                <div class="iconbox-admin m-t-35px">
+                    <a href="" class="icon-admin1 icon-analytics">통계</a>
+                    <h1 class="label-admin">통계</h1>
+                </div>
+            </div>
+        </aside>
+
+
         <main>
             <div class="input-container">
                 
-                <form action="./member/stuff/list.html" method="get">
+                <form action="./analytics/list.html" method="get">
 
                     <div class="input-field-1">
                         <label for="uid" class="uid-label">
@@ -68,7 +104,7 @@
                         </label>
                     </div>
                     <div>
-                        <input class="btn-2 " type="submit" value="관리자 로그인">
+                        <input class="btn-2" type="submit" value="관리자 로그인">
                     </div>
                 </form>
 
@@ -79,4 +115,20 @@
     </section>
     
 </body>
+
+<script>
+    const asideBar1 = document.querySelector('.admin-sidebar1');
+    const asideBar2 = document.querySelector('.admin-sidebar2');
+    const btnAside = document.querySelector('.icon-menu2');
+
+    btnAside.addEventListener('click', (e) => {
+        
+        e.preventDefault();
+        asideBar1.classList.toggle('d-none');
+        asideBar2.classList.toggle('d-none');
+        
+    });
+
+</script>
+
 </html>
