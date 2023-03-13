@@ -34,22 +34,22 @@
 
 .li-title {
     grid-area: tt;
-    font-size: 0.812rem;
+    font-size: 0.8125rem;
 }
 
 .li-price {
     grid-area: pr;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
 }
 
 .li-member {
     grid-area: mem;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
 }
 
 .li-date {
     grid-area: dt;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
 }
 
 .li-heart {

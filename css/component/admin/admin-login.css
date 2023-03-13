@@ -1,7 +1,7 @@
 @charset "UTF-8"; 
 
 /* 그라디언트 */
-.circle{
+/* .circle{
     position: fixed;
     left: 200px;
     margin-top: 30px;
@@ -10,20 +10,14 @@
     border: none;
     display: inline-block;
     background : radial-gradient(circle closest-side at 100% 0%,red,blue,white) ;
-}
-
-/* flex-container */
-.header-container{
-    display: flex;
-    justify-content: center;
-}
+} */
 
 /* input-box */
 .input-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 77px;
+    margin-top: 126px;
     align-items: center;
 }
 
